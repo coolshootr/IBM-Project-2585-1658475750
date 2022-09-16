@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jayapritha N | Portfolio</title>
+        <!---Bootstrap CDN-->
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        >
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <!---Fonts & Icons----->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="./assets/style.css">
+        <link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@600&display=swap" rel="stylesheet">
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    </head>
+    <body>
+        <!---Side Navigation Bar-->
+        <div class="sidebar-container">
+            <div class="sidebar-logo">
+                Jayapritha N
+            </div>
+            <nav>
+                <ul class="sidebar-navigation">
+                    <li class="nav-link active active-onscroll">
+                        <a href="#home">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#about-me">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#skills">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#experience">
+                            <i class="fa fa-suitcase" aria-hidden="true"></i>
+                            Experience
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#projects">
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            Projects
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div id="myNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="overlay-content">
+                <ul class="sidebar-navigation">
+                    <li>
+                        <a href="#home" onclick="clickMenu()">
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#about-me" onclick="clickMenu()">
+                            <i class="fa fa-user-circle" aria-hidden="true"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#skills" onclick="clickMenu()">
+                            <i class="fa fa-lightbulb-o" aria-hidden="true"></i>
+                            Skills
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#experience" onclick="clickMenu()">
+                            <i class="fa fa-suitcase" aria-hidden="true"></i>
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#projects" onclick="clickMenu()">
+                            <i class="fa fa-file-code-o" aria-hidden="true"></i>
+                            Projects
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--Home Container-->
+        <button class="openbtn" onclick="openNav()">
+            <i class="fa fa-bars"></i>
+        </button>
+        <section class="content-container" id="home">
+            <div class="intro">
+                <div class="main-content">
+                    <img src="assets/images/my-img.jpg" class="my-img">
+                    <p class="main-heading">Jayapritha N</p>
+                    <p class="intro-text">Dedicated Engineering student and Curious Developer seeking for a Job opportunity where I can utilize my skills and enhance learning in the field of work.</p>
+                </div>
+            </div>
+            <div class="social-icons">
+                <div class="icons">
+                    <a href="https://github.com/coding-geek21">
+                        <i class="fa fa-github ico"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.linkedin.com/in/jayapritha-n-32aa79185/">
+                        <i class="fa fa-linkedin ico"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://www.facebook.com/jaya.pritha.777/">
+                        <i class="fa fa-facebook ico"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="https://twitter.com/Jayapritha_N">
+                        <i class="fa fa-twitter ico"></i>
+                    </a>
+                </div>
+                <div class="icons">
+                    <a href="mailto:jayapritha9282@gmail.com">
+                        <i class="fa fa-envelope ico"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!--About Me section---->
+        <section class="content-container" id="about-me">
+            <div class="content-div">
+                <p class="section-heading">ABOUT</p>
+                <p class="about-heading">Education</p>
+                <div class="sideline"></div>
+                <div class="container">
+                    <div class="timeline-block timeline-block-right">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h3>B.Tech Information Technology</h3>
+                            <p>Madras Institute of Technology, Chennai</p>
+                            <span>
+                                <i class="fa fa-calendar">&ThinSpace;</i>
+                                2019-2023
+                            </span>
+                            <br>
+                            <span>
+                                GPA : &ThickSpace; 9.0/10 (as of 2
+                                <sup>nd</sup>
+                                semester)
+                            </span>
+                        </div>
+                    </div>
+                    <div class="timeline-block timeline-block-left">
+                        <div class="marker"></div>
+                        <div class="timeline-content">
+                            <h3>Senior Secondary</h3>
+                            <p>NSN Matriculation Higher Secondary School</p>
+                            <span>
+                                <i class="fa fa-calendar">&ThinSpace;</i>
+                                2017-2019
+                            </span>
+                            <br>
+                            <span>
+                                Percentage : &ThickSpace; 94%
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <p class="about-heading">Interests</p>
+                <div class="sideline"></div>
+                <div class="interests">
+                    <div class="row">
+                        <div class="col-12 col-lg-3">
+                            <img class="interests-img" src="assets/images/web-development.png">
+                        </div>
+                        <div class="col-12 col-lg-9">
+                            <h2 class="interest-heading">Web Development</h2>
+                            <p class="intro-text">My Area of Interest is Web Development, I have hands-on experience in HTML, CSS, JavaScript, Bootstrap, Django, PHP and MySQL. Made several projects and also have Working Experience</p>
+                        </div>
+                    </div>
+                </div>
+                <a style="text-align: center;" href="https://drive.google.com/file/d/19pQNXKx5sku1VSMNbcWiUFR9TlPgKmJR/view?usp=sharing" class="button">View Resume</a>
+            </div>
+        </section>
+        <!--Experience section---->
+        <section class="content-container" id="experience">
+            <div class="content-div">
+                <p class="about-heading">Experience</p>
+                <div class="sideline"></div>
+                <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+                <div id="container">
+                    <div class="product-details">
+                        <h1>Full Stack Web Developer</h1>
+                        <h3 class="m-4">Achievements/Tasks</h3>
+                        <ul style="font-size:14px">
+                            <li>
+                                Top among all the other 50+ developer interns
+                            </li>
+                            <li> Developed Authentication System for Login and Sign Up</li>
+                            <li>
+                                An online examination system for students to take exams
+                              and view their results has been developed
+                            </li>
+                            <li>Designed an AutoML tool</li>
+                            <li>Created a Discussion forum</li>
+                        </ul>
+                    </div>
+                    <div class="product-image">
+                        <img src="assets/images/techsnap.jpg" alt="">
+                        <div class="info">
+                            <h2> Description</h2>
+                            <ul>
+                                <li style="font-size:14px;">
+                                    <strong>About Company:</strong>
+                                    <p>
+                                        Techsnap is an all-inclusive, digitalized platform for learning
+                                    technologies, exploring careers, mentoring people and sharing projects, etc..
+                                    </p>
+                                </li>
+                                <li style="font-size:14px;">
+                                    <strong>Location</strong>
+                                    <p>
+                                        Chennai
+                                    </p>
+                                </li>
+                                <li style="font-size:14px;">
+                                    <strong>Duration</strong>
+                                    <p>
+                                        October 2021 - January 2022
+                                    </p>
+                                </li>
+                                <li style="font-size:14px;">
+                                    <strong>Contact</strong>
+                                    <p>
+                                        Sai Pavan Saketh - 97058 11666
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---Skills-->
+        <section class="content-container" id="skills">
+            <div class="content-div">
+                <p class="section-heading">SKILLS</p>
+                <div class="row" style="margin-top: 5%;">
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png">
+                        <p class="skills">C++</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/python--v1.png">
+                        <p class="skills">Python</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/c-programming.png">
+                        <p class="skills">C</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/html-5.png">
+                        <p class="skills">HTML</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/css3.png">
+                        <p class="skills">CSS</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/bootstrap.png">
+                        <p class="skills">BootStrap</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/javascript--v1.png">
+                        <p class="skills">JavaScript</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/fluency/48/000000/mysql-logo.png">
+                        <p class="skills">MySQL</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/color/48/000000/django.png">
+                        <p class="skills">Django</p>
+                    </div>
+                    <div class="col skill-img">
+                        <img src="https://img.icons8.com/ios-filled/50/000000/php-logo.png">
+                        <p class="skills">PHP</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---Projects-->
+        <section class="content-container" id="projects">
+            <div class="content-div">
+                <p class="section-heading">PROJECTS</p>
+                <div class="project">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="project-heading">Online Banking System</h2>
+                            <p class="intro-text">A Web-app made using MySQL and PHP framework. It provides the user access to create their own account, login & sign-up, apply for debit card and net-banking. Staff would be able to approve the accounts and manage accounts.</p>
+                            <a href="https://tms-bank.herokuapp.com/home.html" class="project-button">See Live</a>
+                            <a href="https://github.com/coding-geek21/TMS-bank" class="project-link">Source Code</a>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img class="project-img" src="assets/images/banking-system.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="project-heading">Blog Web App</h2>
+                            <p class="intro-text">
+                                A simple Django website that enables user to write their own blogs manage blogs and view othes blog posts.
+                            </p>
+                            <a href="https://eduvive.herokuapp.com/" class="project-button">See Live</a>
+                            <a href="https://github.com/coding-geek21/Eduvive" class="project-link">Source Code</a>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img class="project-img" src="assets/images/education-portal.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="project-heading">Employee Management System</h2>
+                            <p class="intro-text">
+                                Developed a Java Servlet and JSF application with JDBC access and
+                                MySQL for organization's employee management and perform the basic operations on the database by using cloud functions.
+                            </p>
+                            <a href="https://github.com/coding-geek21/employee-management-system" class="project-link">Source Code</a>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img class="project-img" src="assets/images/ems.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="row">
+                        <div class="col-lg-6 col-12">
+                            <h2 class="project-heading">Employee Promotion Prediction</h2>
+                            <p class="intro-text">
+                                Implemented several machine learning algorithms to predict whether the employee should be promoted or not.
+                            </p>
+                            <a href="https://github.com/coding-geek21/employee-promotion-prediction" class="project-link">Source Code</a>
+                        </div>
+                        <div class="col-lg-6 col-12">
+                            <img class="project-img" src="assets/images/eps.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer></footer>
+        <script src="./assets/script.js"></script>
+    </body>
+</html>

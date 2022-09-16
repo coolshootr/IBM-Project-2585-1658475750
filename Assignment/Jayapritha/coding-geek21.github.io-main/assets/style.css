@@ -1,0 +1,610 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background-color: #f2f2fc;
+}
+
+.button {
+  background-color: #9c7fe8;
+  font-size: 1.8rem;
+  width: 20%;
+  text-decoration: none;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.sidebar-container {
+  position: fixed;
+  width: 20%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f163b;
+  color: #fff;
+}
+
+.sidebar-container-overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+  left: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background: #1f163b;
+  color: #fff;
+}
+
+.content-container {
+  padding-left: 20%;
+  padding-top: 20px;
+}
+
+.sidebar-logo {
+  padding: 10px 15px 10px 30px;
+  font-size: 2.8rem;
+  margin: 30% 0%;
+  width: 100%;
+  font-weight: 600;
+  font-family: "Rubik", sans-serif;
+}
+
+.sidebar-navigation {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  list-style-type: none;
+  position: relative;
+}
+
+.sidebar-navigation li {
+  background-color: transparent;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  font-size: 1.8rem;
+  text-decoration: none;
+  line-height: 2.2rem;
+}
+
+.sidebar-navigation li a {
+  padding: 10px 15px 10px 30px;
+  display: block;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.sidebar-navigation li .fa {
+  margin-right: 10px;
+}
+
+.sidebar-navigation li a:hover {
+  text-decoration: none;
+  outline: none;
+  color: #06050c;
+}
+
+.sidebar-navigation li::before {
+  background-color: #9c7fe8;
+  position: absolute;
+  content: "";
+  height: 100%;
+  left: 0;
+  color: #1f163b;
+  top: 0;
+  -webkit-transition: width 0.2s ease-in;
+  transition: width 0.2s ease-in;
+  width: 0px;
+  z-index: -1;
+}
+
+.sidebar-navigation li:hover::before {
+  width: 100%;
+}
+
+.openbtn {
+  display: none;
+  font-size: 2rem;
+  margin: 2%;
+}
+
+@media screen and (max-width: 970px) {
+  .sidebar-container {
+    position: fixed;
+    width: 0%;
+    height: 100%;
+    font-family: "Montserrat", sans-serif;
+    left: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    background: #1f163b;
+    color: #fff;
+  }
+  .content-container {
+    padding-left: 0%;
+  }
+  .openbtn {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: white;
+    background-color: #1f163b;
+  }
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background: #1f163b;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.my-img {
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 2rem;
+  margin-left: 10%;
+  text-align: left;
+  color: #fafafa;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+.overlay-top {
+  margin-bottom: 60%;
+}
+
+.intro {
+  margin-top: 8%;
+  text-align: center;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-heading {
+  margin-top: 2%;
+  font-family: "Rubik", sans-serif;
+  font-size: 3.2rem;
+  color: #302e4d;
+}
+
+.section-heading {
+  margin-top: 8%;
+  margin-bottom: 5%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 3.2rem;
+  color: #302e4d;
+}
+
+.intro-text {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  text-align: center;
+  color: #544d66;
+}
+
+.icons {
+  border-radius: 50%;
+  width: 40px;
+  text-align: center;
+  display: inline-block;
+  height: 40px;
+  margin-left: 2%;
+  font-size: 1.8rem;
+  background-color: #1f163b;
+}
+
+.ico,
+.social-icons {
+  color: white;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.icons:hover {
+  height: 44px;
+  font-size: 2rem;
+  width: 44px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.content-div {
+  margin: 5%;
+}
+
+/* About me section */
+
+/*Timeline container*/
+
+.about-heading {
+  margin-top: 5%;
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  color: #9c7fe8;
+}
+
+.sideline {
+  width: 8%;
+  border-bottom: 4px solid #9c7fe8;
+}
+
+.container {
+  width: 80%;
+  padding: 50px 0;
+  margin: 50px auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  height: 100%;
+  background: #ccd1d9;
+  z-index: 1;
+}
+
+.timeline-block {
+  width: -webkit-calc(50% + 8px);
+  width: -moz-calc(50% + 8px);
+  width: calc(50% + 8px);
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-box-pack: justify;
+  justify-content: space-between;
+  clear: both;
+}
+
+.timeline-block-right {
+  float: right;
+}
+
+.timeline-block-left {
+  float: left;
+  direction: rtl;
+}
+
+.marker {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #f5f7fa;
+  background: #9c7fe8;
+  margin-top: 10px;
+  z-index: 9990;
+}
+
+.timeline-content {
+  width: 100%;
+  padding: 0 15px;
+  color: #666;
+}
+
+.timeline-content h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.timeline-content span {
+  font-size: 1.5rem;
+  color: #1f163b;
+}
+
+.timeline-content p {
+  font-size: 1.8rem;
+  line-height: 1.5em;
+  font-family: "Nunito", sans-serif;
+  word-spacing: 1px;
+  font-weight: bold;
+  color: #9c7fe8;
+}
+
+.interests-img {
+  width: 100%;
+}
+
+.interersts {
+  text-align: center;
+}
+
+.interest-heading,
+.project-heading {
+  margin-top: 5%;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 2.4rem;
+}
+
+@media screen and (max-width: 768px) {
+  .container:before {
+    left: 8px;
+    width: 2px;
+  }
+  .timeline-block {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .timeline-block-right {
+    float: none;
+  }
+
+  .timeline-block-left {
+    float: none;
+    direction: ltr;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .button {
+    background-color: #9c7fe8;
+    font-size: 1.8rem;
+    width: 80%;
+    text-decoration: none;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+  }
+}
+
+/* Skills  */
+
+#skills {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills {
+  font-family: "Nunito", sans-serif;
+  font-size: 1.8rem;
+  color: #544d66;
+  text-align: center;
+}
+.skill-img {
+  margin-bottom: 5%;
+  text-align: center;
+  padding: 0% 5%;
+  justify-content: space-evenly;
+}
+
+/*projects*/
+
+.project-img {
+  width: 100%;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.project {
+  margin-bottom: 10%;
+}
+
+.project-button {
+  background-color: #9c7fe8;
+  font-size: 1.8rem;
+  text-decoration: none;
+  width: 25%;
+  color: white;
+  text-align: center;
+  padding: 10px 20px;
+  border-radius: 30px;
+  display: inline-block;
+}
+
+.project-link {
+  color: #9c7fe8;
+  font-weight: bold;
+  margin-left: 4%;
+  font-size: 1.8rem;
+  font-family: "Nunito", sans-serif;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media screen and (max-width: 450px) {
+  .project {
+    margin-bottom: 20%;
+  }
+  .project-button {
+    width: 50%;
+    margin-bottom: 10%;
+  }
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bree+Serif&family=EB+Garamond:ital,wght@0,500;1,800&display=swap');
+
+#container{
+	box-shadow: 0 15px 30px 1px grey;
+	background: rgba(255, 255, 255, 0.90);
+	text-align: center;
+	border-radius: 5px;
+	margin: 5em auto;
+	height: 350px;
+	width: 90%;
+}
+
+
+
+.product-details {
+	position: relative;
+	text-align: left;
+	padding: 30px;
+	height: 100%;
+	float: left;
+	width: 40%;
+
+}
+
+#container .product-details h1{
+	display: inline-block;
+	position: relative;
+	font-size: 30px;
+	color: #344055;
+	margin: 0;
+	
+}
+
+#container .product-details h1:before{
+	position: absolute;
+	content: '';
+	right: 0%; 
+	top: 0%;
+	transform: translate(25px, -15px);
+	display: inline-block;
+	background: #ffe6e6;
+	border-radius: 5px;
+	font-size: 14px;
+	padding: 5px;
+	color: white;
+	margin: 0;
+	animation: chan-sh 6s ease infinite;
+
+}
+
+
+
+	
+
+
+.hint-star {
+	display: inline-block;
+	margin-left: 0.5em;
+	color: gold;
+	width: 50%;
+}
+
+
+#container .product-details > p {
+	text-align: center;
+	font-size: 18px;
+	color: #7d7d7d;
+	
+}
+.control{
+	position: absolute;
+	bottom: 20%;
+	left: 22.8%;
+	
+}
+.btn {
+
+	transform: translateY(0px);
+	transition: 0.3s linear;
+	background:  #809fff;
+	border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+	cursor: pointer;
+	outline: none;
+	border: none;
+	color: #eee;
+	padding: 0;
+	margin: 0;
+	
+}
+
+
+.product-image {
+	transition: all 0.3s ease-out;
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	float: right;
+	width: 45%;
+	display: inline-block;
+}
+
+#container img {width: 100%;height: 100%;}
+
+.info {
+    background: rgba(27, 26, 26, 0.9);
+    font-family: 'Bree Serif', serif;
+    transition: all 0.3s ease-out;
+    transform: translateX(-100%);
+    position: absolute;
+    line-height: 1.8;
+    text-align: left;
+    font-size: 105%;
+    cursor: no-drop;
+    color: #FFF;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+.info h2 {text-align: center}
+.product-image{ background-color: #06050c;}
+.product-image:hover .info{transform: translateX(0);}
+
+.info ul li{transition: 0.3s ease;}
+
+.product-image:hover img {transition: all 0.3s ease-out;}
+.product-image:hover img {transform: scale(1.2, 1.2);}
+
